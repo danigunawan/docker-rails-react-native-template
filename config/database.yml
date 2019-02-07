@@ -1,0 +1,26 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  port: 3306
+  pool: 5  
+  username: root
+  password: <%= ENV['MYSQL_ROOT_PASSWORD'] %>
+  timeout: 5000
+  url: <%= ENV['DATABASE_URL'] %>
+development:
+  <<: *default
+  database: app_development
+
+
+test:
+  <<: *default
+  database: app_test
+
+production:
+  adapter:  mysql2
+  encoding: utf8
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host:     <%= ENV['DB_HOSTNAME'] %>
+  port:     <%= ENV['DB_PORT'] %>

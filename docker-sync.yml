@@ -1,0 +1,10 @@
+version: '2'
+
+options:
+  verbose: true
+
+syncs:
+  sync-volume:
+    host_disk_mount_mode: 'cached'
+    src: '.'
+    sync_excludes: ['vendor', 'blueorigin', '.gitignore', '.git']
