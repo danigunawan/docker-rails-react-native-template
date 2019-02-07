@@ -1,0 +1,3 @@
+rootProject.name = 'myspace'
+
+include ':app'

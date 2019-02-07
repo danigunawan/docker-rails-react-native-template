@@ -71,20 +71,22 @@ devpass
 yarn1.7
 node 11
 watchman 4.9.0
+https://qiita.com/Umibows/items/175a066c1259ff4b0158
 
+一旦グローバルインストールしてreact-native initする
+終わったら
 ```
-mkdir native-project
-cd native-project
-touch package.json
+yarn global remove react-native-cli
 ```
 package.jsonを以下のように編集
+nameはアプリの名前に揃える
 必須ではないがほぼほぼ使うものは最初から入れる
 react-nativeのバージョンは0.57
 warningを出さないようにしといた
 
 ```
 {
-  "name": "native-project",
+  "name": "myspace",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -130,4 +132,6 @@ warningを出さないようにしといた
 
 ```
 yarn install
+yarn start
 ```
+でビルドできる。
