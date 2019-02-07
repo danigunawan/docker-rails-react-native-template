@@ -1,7 +1,7 @@
 # docker-rails-react-native-template
 フロントreact-native サーバサイドrailsの雛形
 
-## 構築手順
+## rails サーバ構築手順
 ```
 gem --version
 2.5.2.3
@@ -66,3 +66,5 @@ mysql -u root -p
 devpass
 ```
 で入れればオッケー
+
+# react-nativeビルド手順
