@@ -68,3 +68,66 @@ devpass
 で入れればオッケー
 
 # react-nativeビルド手順
+yarn1.7
+node 11
+watchman 4.9.0
+
+```
+mkdir native-project
+cd native-project
+touch package.json
+```
+package.jsonを以下のように編集
+必須ではないがほぼほぼ使うものは最初から入れる
+react-nativeのバージョンは0.57
+warningを出さないようにしといた
+
+```
+{
+  "name": "native-project",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native run-ios --simulator='iPhone 7'",
+    "android": "react-native run-android",
+    "test": "jest",
+    "lint": "eslint index.js src"
+ },
+  "dependencies": {
+    "formik": "^1.3.2",
+    "native-base": "^2.8.1",
+    "react": "16.6.3",
+    "react-native": "^0.57.0",
+    "react-native-vector-icons": "^6.1.0",
+    "react-navigation": "^2.18.2",
+    "prop-types": "^15.0.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "superagent": "^3.8.3",
+    "yup": "^0.26.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "23.6.0",
+    "@babel/core": "7.0.0",
+    "babel-core": "^6.0.0",
+    "metro-react-native-babel-preset": "^0.45.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "23.6.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
+```
+
+```
+yarn install
+```

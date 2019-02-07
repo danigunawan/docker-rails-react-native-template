@@ -2,3 +2,4 @@ tmp
 .docker-sync/
 log
 .DS_Store
+node_modules
