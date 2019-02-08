@@ -136,3 +136,10 @@ yarn install
 yarn start
 ```
 でビルドできる。
+
+## api
+grape api使う
+https://qiita.com/Esfahan/items/90feb3ae39dde51f95fa
+
+サーバ立てて↓でuser取得する
+http://0.0.0.0:3000/api/v1/users
