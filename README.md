@@ -16,7 +16,8 @@ brew install fswatch
 brew install unison
 ```
 
-Dockerfile, docker-compose.yml, docker-compose-dev.yml, docker-sync.ymlを用意する
+Dockerfile, docker-compose.yml, docker-sync.ymlを用意する
+docker-sync.ymlのexcludeするファイルにreact-nativeのプロジェクト追加しとく
 
 他コンテナとmysqlを共有するためnetwork作る
 ```
@@ -26,7 +27,7 @@ docker network create --driver bridge common_link
 ```
 docker-compose build
 docker-sync start
-docker-compose -f docker-compose.yml -f docker-compose-dev.yml up
+docker-compose up
 ```
 別windowでコンテナに入る
 ```
