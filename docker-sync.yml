@@ -5,6 +5,5 @@ options:
 
 syncs:
   sync-volume:
-    host_disk_mount_mode: 'cached'
     src: '.'
-    sync_excludes: ['vendor', 'myspace', '.gitignore', '.git']
+    sync_excludes: ['myspace/*']
