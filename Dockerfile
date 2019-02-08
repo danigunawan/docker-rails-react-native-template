@@ -10,4 +10,4 @@ RUN apt-get update && \
                        --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
-COPY . $APP_ROOT
+# COPY . $APP_ROOT
